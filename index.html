@@ -5,13 +5,13 @@
     <title>Azwad's Page</title>
 
     <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
     <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Specifies the document mode for Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- CSS -->
     <!-- The following CSS has been added so that the page
@@ -37,135 +37,85 @@
         display: block;
         margin: 0 auto;
       }
+      h1 {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        animation: colorChange 3s infinite alternate;
+      }
+      @keyframes colorChange {
+        0% { color: #fffb00; }
+        25% { color: #ff0000; }
+        50% { color: #00ff15; }
+        75% { color: #00b3ff; }
+        100% { color: #e600ff; }
+      }
+      .nav-button {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #000000; 
+        color: white; 
+        text-decoration: none; 
+        border-radius: 5px; 
+        font-size: 1.2em; 
+        transition: background-color 0.3s ease, transform 0.3s ease; 
+      }
+      .nav-button:hover {
+        background-color: #5b5b5b; 
+        transform: scale(1.05); 
+      }
     </style>
   </head>
   <body>
     <!--
-
       LIST ANY CITATIONS HERE
-
         * As
         * B
-
     -->
 
     <!--
-
       YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
-
     -->
+
     <header>
       <div style="background-color: #000000; color: white; padding: 20px 0; display: flex; align-items: center; justify-content: space-between;">
         <div style="margin-left: 20px;">
-            <img src="The Ordinary Tech Page..png" alt="Your Site Logo" style="height: 250px;">
+          <img src="The_Ordinary_Tech_Page.png" alt="Your Site Logo" style="height: 250px;">
         </div>
         <div style="margin-right: 20px; text-align: right;">
-          <h1 style="margin: 0; font-size: 24px;">____________________________</h1>
-          <p style="margin: 0; font-size: 16px;">The Page that help you with find the best gaming gear!</p>
+          <h1>____________________________</h1>
+          <p>The Page that helps you find the best gaming gear!</p>
         </div>
       </div>
     </header>
-<main>
-<h2> What kind of PC do you need?</h2>
-<head>We always have to think twice about whether we can make a PC or just indulge ourselves and buy a pre-built PC. Well, do not worry, as the website below will help guide you through the process of building a PC of your own!</head>
-<a href="https://pcpartpicker.com" class="nav-button">Click to start building your PC! </a>
-</style>
-<style>
-  h1 {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    animation: colorChange 3s infinite alternate;
-  }
+    <main>
+      <h2>What kind of PC do you need?</h2>
+      <p>We always have to think twice about whether we can make a PC or just indulge ourselves and buy a pre-built PC. Well, do not worry, as the website below will help guide you through the process of building a PC of your own!</p>
+      <a href="https://pcpartpicker.com" class="nav-button">Click to start building your PC!</a>
 
-  @keyframes colorChange {
-    0% {
-      color: #fffb00;
-    }
-    25% {
-      color: #ff0000; 
-    }
-    50% {
-      color: #00ff15;
-    }
-    75% {
-      color: #00b3ff;
-    }
-    100% {
-      color: #e600ff;
-    }
-  }
-</style>
-<head>
+      <h3>Here are the best gaming gears of 2024 recommended by Professional eSports Players.</h3>
+      <a href="https://a.co/d/7GGskty" class="nav-button">ASUS ROG SWIFT $729.59<img src="ROG_Swift_500Hz.png" alt="ASUS ROG SWIFT" style="width: 393px; height: auto;"></a>
+      <a href="https://a.co/d/fZ34HiR" class="nav-button">RAZER HUNTSMEN MINI $102.99<img src="huntsman_mini.png" alt="RAZER HUNTSMEN MINI" style="width: 393px; height: auto;"></a>
+      <a href="https://a.co/d/i8RCgFR" class="nav-button">LOGITECH G PRO X SUPERLIGHT 2 $219.99<img src="SUPERLIGHT_G_PRO_X.png" alt="LOGITECH G PRO X SUPERLIGHT" style="width: 300px; height: auto;"></a>
+      <a href="https://a.co/d/hNQE0aG" class="nav-button">ARTISAN ZERO $102.99<img src="zero_XSOFT.png" alt="ARTISAN ZERO" style="width: 393px; height: auto;"></a>
+    </main>
 
-<h3>Here are the best gaming gears of 2024 recommanded by Professional eSports Players.</h3>
-<style>
-  .nav-button {
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: #000000; 
-    color: white; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    font-size: 1.2em; 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-  }
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      <input type="email" name="email" placeholder="Your Email" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      <input type="text" name="subject" placeholder="Subject" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      <textarea name="message" placeholder="Your Message" rows="5" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      <button type="submit" style="background-color: #000000; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">SUBMIT</button>
+    </form>
 
-  .nav-button:hover {
-    background-color: #000000; 
-    transform: scale(1.05); 
-  }
-</style>
-<a href="https://a.co/d/7GGskty" class="nav-button">ASUS ROG SWIFT $729.59<img src="ROG_Swift_500Hz.png" alt="Description" style="width: 393px; height: auto;">
-<a href="https://a.co/d/fZ34HiR" class="nav-button">RAZER HUNTSMEN MINI $102.99<img src="huntsman mini.png" alt="Description" style="width: 393px; height: auto;">
-<a href="https://a.co/d/i8RCgFR" class="nav-button">LOGITECH G PRO X SUPERLIGHT 2 $219.99<img src="SUPERLIGHT G PRO X.png" alt="Description" style="width: 300px; height: auto;">
-<a href="https://a.co/d/hNQE0aG" class="nav-button">ARTISAN ZERO $102.99 <img src="zero_XSOFT.png" alt="Description" style="width: 393px; height: auto;">
-</a>
-<style>
-  .nav-button {
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: #000000; 
-    color: rgb(255, 255, 255); 
-    font-size: 1.2em; 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-  }
-  .nav-button:hover {
-    background-color: #5b5b5b; 
-    transform: scale(1.05); 
-  }
-</style>
-</a>
-</main>
-
-<h2>Contact Us</h2>
-<form action="submit_form.php" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-
-    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-
-    <input type="text" name="subject" placeholder="Subject" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-
-    <textarea name="message" placeholder="Your Message" rows="5" required style="width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-
-    <button type="submit" style="background-color: #000000; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">SUBMIT</button>
-</form>
-
-<footer style="background-color: #000000; padding: 20px; text-align: center;">
-  <div class="footer-logo">
-      <img src="The Ordinary Tech Page..png" alt="Site Logo" style="max-width: 200px;">
-  </div>
-
-  <nav>
-      <ul style="list-style-type: none; padding: 0;">
-      </ul>
-  </nav>
-
-  <div class="footer-contact" style="margin: 20px 0;">
-
-  </div>
-
-  <div class="footer-copyright" style="font-size: 14px; color: #ffffff;">
-      &copy; <span"></span> The Ordinary Tech Page. All Rights Reserved. 2024
-  </div>
-</footer>
+    <footer style="background-color: #000000; padding: 20px; text-align: center;">
+      <div class="footer-logo">
+        <img src="The_Ordinary_Tech_Page.png" alt="Site Logo" style="max-width: 200px;">
+      </div>
+      <div class="footer-copyright" style="font-size: 14px; color: #ffffff;">
+        &copy; 2024 The Ordinary Tech Page. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
